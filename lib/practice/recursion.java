@@ -7,8 +7,9 @@ public class recursion {
     public static void main(String[] args) {
         int num;
         System.out.print("Enter a number: ");
-        Scanner sc = new Scanner(System.in);
-        num = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            num = sc.nextInt();
+        }
         int result= sum(num);
         System.out.println(result);
     }
