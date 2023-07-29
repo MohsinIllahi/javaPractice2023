@@ -13,8 +13,7 @@ public class C extends B {
 System.out.println("88");
 }}
 public static void main(String[] args){
-
-C object = new C();
+B object = new B();
 
 object.m();
 }}
